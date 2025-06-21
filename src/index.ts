@@ -1,5 +1,5 @@
+import * as dotenv from 'dotenv';
 import express from 'express';
-import dotenv from 'dotenv';
 import {createProduto, getProdutos, uploadMiddleware} from './controllers/produtos';
 import swaggerUi from 'swagger-ui-express';
 import yaml from 'yamljs';
@@ -18,11 +18,8 @@ app.get('/', (req, res) => {
 app.get('/produtos', getProdutos);
 app.post('/produtos', uploadMiddleware, createProduto);
 
-// Configuração do Swagger
 const swaggerDocument = fs.readFileSync(path.join(__dirname, '../docs/api-docs.yaml'), 'utf8');
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(yaml.parse(swaggerDocument)));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
-
-export default app;
