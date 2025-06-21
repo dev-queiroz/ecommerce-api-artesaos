@@ -25,7 +25,7 @@ Esta API é projetada para um único proprietário (artesão) que deseja gerenci
 
 ## Documentação
 - [Wiki](https://github.com/dev-queiroz/ecommerce-api-artesaos/wiki): Guia de Contribuição, Estrutura do Projeto e mais.
-- [Swagger](https://dev-queiroz.onrender.com/api-docs): Documentação interativa da API.
+- [Swagger](https://ecommerce-api-artesaos.onrender.com/api-docs): Documentação interativa da API.
 
 ## Como Configurar
 
