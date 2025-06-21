@@ -2,10 +2,8 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "commonjs",
-    "outDir": "./dist",
-    "rootDirs": ["./src",
-      "./src/tests"
-    ],
+    "outDir": ".dist",
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
