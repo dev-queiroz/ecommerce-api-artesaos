@@ -1,0 +1,77 @@
+openapi: 3.0.3
+info:
+  title: API de E-commerce para Artesãos
+  version: 1.0.0
+  description: API para gerenciar produtos de um artesão, com suporte a upload de imagens.
+servers:
+  - url: http://localhost:3000
+paths:
+  /produtos:
+    get:
+      summary: Lista todos os produtos
+      responses:
+        '200':
+          description: Lista de produtos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id: { type: integer }
+                    nome: { type: string }
+                    preco: { type: number }
+                    estoque: { type: integer }
+                    imagem_url: { type: string, nullable: true }
+        '500':
+          description: Erro ao listar produtos
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
+    post:
+      summary: Cria um novo produto com imagem
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                nome: { type: string }
+                preco: { type: number }
+                estoque: { type: integer }
+                imagem: { type: string, format: binary }
+              required: [ nome, preco, estoque, imagem ]
+      responses:
+        '201':
+          description: Produto criado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id: { type: integer }
+                  nome: { type: string }
+                  preco: { type: number }
+                  estoque: { type: integer }
+                  imagem_url: { type: string }
+        '400':
+          description: Campos obrigatórios faltando
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
+        '500':
+          description: Erro ao criar produto
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
