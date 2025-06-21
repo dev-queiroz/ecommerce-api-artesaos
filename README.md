@@ -172,13 +172,7 @@ ecommerce-api-artesaos/
 - [ ] Criar uma Wiki no GitHub com guias de contribuição e documentação detalhada.
 
 ## Contribuindo
-
-1. Faça um fork do repositório.
-2. Crie uma branch: `git checkout -b feature/<nome-da-funcionalidade>`.
-3. Implemente e adicione testes.
-4. Faça commit: `git commit -m "Descrição clara da mudança"`.
-5. Envie a branch: `git push origin feature/<nome-da-funcionalidade>`.
-6. Abra um pull request no GitHub.
+Veja o [Guia de Contribuição](https://github.comdev-queiroz/ecommerce-api-artesaos/wiki/Guia-de-Contribui%C3%A7%C3%A3o) na Wiki para detalhes.
 
 Veja a **Wiki** do repositório (a ser criada) para mais detalhes.
 
