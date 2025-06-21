@@ -5,6 +5,7 @@ info:
   description: API para gerenciar produtos de um artesão, com suporte a upload de imagens.
 servers:
   - url: http://localhost:3000
+  - url: https://ecommerce-api-artesaos.onrender.com
 paths:
   /produtos:
     get:
