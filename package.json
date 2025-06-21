@@ -4,7 +4,9 @@
   "description": "API RESTful para e-commerce de artesãos, desenvolvida com TypeScript e Supabase.",
   "main": ".dist/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "build": "tsc",
+    "start": "node .dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
