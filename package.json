@@ -2,7 +2,7 @@
   "name": "ecommerce-api-artesaos",
   "version": "1.0.0",
   "description": "API RESTful para e-commerce de artesãos, desenvolvida com TypeScript e Supabase.",
-  "main": "index.js",
+  "main": ".dist/index.js",
   "scripts": {
     "start": "ts-node src/index.ts"
   },
@@ -12,13 +12,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/dev-queiroz/ecommerce-api-artesaos/issues"
   },
   "homepage": "https://github.com/dev-queiroz/ecommerce-api-artesaos#readme",
   "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.3",
     "dotenv": "^16.5.0",
