@@ -3,7 +3,9 @@
     "target": "es2018",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDirs": ["./src",
+      "./src/tests"
+    ],
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -13,11 +15,11 @@
     "noImplicitAny": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "src/tests/**/*"
   ],
   "exclude": [
     "node_modules",
-    "dist",
-    "src/tests/**/*"
+    "dist"
   ]
 }

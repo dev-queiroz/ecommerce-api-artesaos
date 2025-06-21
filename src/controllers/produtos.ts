@@ -1,7 +1,8 @@
-import { Request, Response } from 'express';
-import { createClient } from '@supabase/supabase-js';
+import {Request, Response} from 'express';
+import {createClient} from '@supabase/supabase-js';
+// @ts-ignore
 import multer from 'multer';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -87,3 +88,5 @@ export const createProduto = async (req: Request, res: Response): Promise<void> 
 
 // Exportar o middleware do Multer para usar na rota
 export const uploadMiddleware = upload.single('imagem');
+// Default export
+export default test;

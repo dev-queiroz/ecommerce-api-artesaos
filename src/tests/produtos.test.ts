@@ -1,8 +1,8 @@
 import {mockRequest, mockResponse} from 'jest-mock-req-res';
 import {createClient} from '@supabase/supabase-js';
-import supertest from 'supertest';
-import express from 'express';
-import {createProduto, getProdutos, uploadMiddleware} from '../src/controllers/produtos';
+import {createProduto, getProdutos, uploadMiddleware} from '../controllers/produtos';
+import supertest = require('supertest');
+import express = require('express');
 
 // Configurar o app sem iniciar o servidor
 const app = express();
