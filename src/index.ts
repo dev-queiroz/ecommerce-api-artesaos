@@ -2,8 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import {createProduto, getProdutos, uploadMiddleware} from './controllers/produtos';
 import swaggerUi from 'swagger-ui-express';
-import * as swaggerDocument from '../docs/api-docs.yaml';
 import yaml from 'yamljs';
+
+const swaggerDocument = yaml.load('./docs/api-docs.yaml');
 
 dotenv.config();
 
