@@ -123,6 +123,8 @@ Cria um novo produto com upload de imagem.
 - **Resposta de Erro** (400 ou 500):
   ```json
   { "error": "Campos obrigatórios: nome, preco, estoque" }
+  ```
+  ```json
   { "error": "Erro ao fazer upload da imagem: <detalhe>" }
   ```
 
