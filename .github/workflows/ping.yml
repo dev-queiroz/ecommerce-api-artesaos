@@ -1,0 +1,15 @@
+name: Keep Alive APIs
+
+on:
+  schedule:
+    - cron: '*/1 * * * *' # a cada 1 minuto
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl APIs to keep alive
+        run: |
+          curl -s https://ecommerce-api-artesaos.onrender.com/
+          curl -s https://hgcmkgezdizqjqbvrlkt.supabase.co/rest/v1/
