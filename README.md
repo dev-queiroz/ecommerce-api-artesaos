@@ -23,6 +23,10 @@ Esta API é projetada para um único proprietário (artesão) que deseja gerenci
 - Suporte a upload de imagens no bucket `produtos-imagens`.
 - Estrutura do projeto pronta para expansão (testes, documentação Swagger, CI/CD).
 
+## Documentação
+- [Wiki](https://github.com/dev-queiroz/ecommerce-api-artesaos/wiki): Guia de Contribuição, Estrutura do Projeto e mais.
+- [Swagger](https://ecommerce-api-artesaos.onrender.com/api-docs): Documentação interativa da API.
+
 ## Como Configurar
 
 Siga os passos abaixo para configurar e executar a API localmente.
